@@ -1,2 +1,70 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://Meekdai.github.io/Gmeek-template</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://Meekdai.github.io/Gmeek-template</link></image><lastBuildDate>Thu, 14 Mar 2024 09:17:29 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>请接着之后的安装步骤执行</title><link>https://Meekdai.github.io/Gmeek-template/post/qing-jie-zhao-zhi-hou-de-an-zhuang-bu-zou-zhi-xing.html</link><description>如果你点击了`READM.md`的链接后，看到了这个页面，请继续之后的安装步骤执行。</description><guid isPermaLink="true">https://Meekdai.github.io/Gmeek-template/post/qing-jie-zhao-zhi-hou-de-an-zhuang-bu-zou-zhi-xing.html</guid><pubDate>Thu, 14 Mar 2024 09:15:10 +0000</pubDate></item><item><title>这是Gmeek模板仓库</title><link>https://Meekdai.github.io/Gmeek-template/post/zhe-shi-Gmeek-mo-ban-cang-ku.html</link><description>通过这个模板创建库，可以大大减少部署Gmeek博客的配置步骤。</description><guid isPermaLink="true">https://Meekdai.github.io/Gmeek-template/post/zhe-shi-Gmeek-mo-ban-cang-ku.html</guid><pubDate>Wed, 20 Dec 2023 07:42:24 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://JunhaoZhou1222.github.io/JunhaoZhou.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://JunhaoZhou1222.github.io/JunhaoZhou.github.io</link></image><lastBuildDate>Mon, 09 Mar 2026 23:58:06 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>机器学习神经网络的基本架构</title><link>https://JunhaoZhou1222.github.io/JunhaoZhou.github.io/post/ji-qi-xue-xi-shen-jing-wang-luo-de-ji-ben-jia-gou.html</link><description>##1.数据获取
+##2.特征工具
+##3.建立模型
+##4.评估与应用
+
+#K-近邻
+1.计算已知点与其他所有点的距离
+2.按照距离排序
+3.找到与当前点最近的k个点
+4.确定前k个点属于各个类型的概率
+5.将前k个点出现频率最高的点作为当前点的预测分类
+
+#损失函数（Loss）
+总损失 = 数据损失 + lambda正则化
+lambda越大意味着惩罚力度越大，对模型复杂度容忍度降低，模型会变得更平滑，不纠结异常点，但是容易欠拟合
+lambda越小意味着惩罚力度越小，模型会把训练集的错误降为0，模型会变得扭曲复杂，但是容易过拟合
+
+
+&lt;img width='767' height='373' alt='Image' src='https://github.com/user-attachments/assets/f030e94c-d7e4-447e-a5e2-4027ed986cc9' /&gt;
+
+#回归问题：
+MSE, MAE用于回归训练（预测连续数值)
+
+#分类问题：
+Binary Cross entropy用于二分类问题
+Category Cross entropy用于多分类问题
+
+#前向传播：
+
+&lt;img width='789' height='376' alt='Image' src='https://github.com/user-attachments/assets/5269f051-e235-41fb-8317-25089c031bdc' /&gt;
+
+L=-logP(x), L越大，正确概率越小
+
+#神经元
+在复杂任务上用太少会欠拟合
+在简单任务上用太多会过拟合
+
+#激活函数
+
+&lt;img width='729' height='358' alt='Image' src='https://github.com/user-attachments/assets/b394ee55-c63c-461e-afcc-be390d3d0ae5' /&gt;
+
+##CNN 卷积神经网络
+输入层
+卷积层
+池化层
+全连接层
+
+&lt;img width='789' height='316' alt='Image' src='https://github.com/user-attachments/assets/7837cb0b-8d8c-45d8-bbd3-7ba364c716fe' /&gt;
+
+&lt;img width='781' height='453' alt='Image' src='https://github.com/user-attachments/assets/1d6b07e0-e0b7-454e-afac-77ca04793a6e' /&gt;
+
+#数据预处理
+初始化权重矩阵
+W= 0.01 * np.random.randn(Depth, Height)
+
+&lt;img width='698' height='291' alt='Image' src='https://github.com/user-attachments/assets/755c3fea-caa5-4eaa-a679-c5a89a0c579e' /&gt;
+
+#卷积结果计算公式
+长度H2 = (H1 - Fh + 2P) / S + 1
+宽度W2 = (W1 - Fw + 2P) / S + 1
+
+#权重参数
+
+&lt;img width='756' height='352' alt='Image' src='https://github.com/user-attachments/assets/f212d35a-cec6-4cc8-8ba9-cdd05894e092' /&gt;
+
+
+#Resnet 残差网络
+
+&lt;img width='760' height='342' alt='Image' src='https://github.com/user-attachments/assets/648f1dc8-e7c7-41ed-9b35-1c8dbd8dfd21' /&gt;。</description><guid isPermaLink="true">https://JunhaoZhou1222.github.io/JunhaoZhou.github.io/post/ji-qi-xue-xi-shen-jing-wang-luo-de-ji-ben-jia-gou.html</guid><pubDate>Mon, 09 Mar 2026 23:57:35 +0000</pubDate></item></channel></rss>
