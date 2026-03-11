@@ -39,7 +39,8 @@ test_dataloader = DataLoader(  #每次取一个batch
     dataset=test_datasets,
     batch_size=64,
     shuffle=True
-)```
+)
+```
 
 # CNN模型框架
 

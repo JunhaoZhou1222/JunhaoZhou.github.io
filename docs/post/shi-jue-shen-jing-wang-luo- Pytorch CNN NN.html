@@ -51,7 +51,8 @@ test_dataloader = DataLoader(  #每次取一个batch
     dataset=test_datasets,
     batch_size=64,
     shuffle=True
-)```
+)
+```
 
 # CNN模型框架
 
@@ -181,7 +182,8 @@ test_dataloader = DataLoader(  #每次取一个batch
     dataset=test_datasets,
     batch_size=64,
     shuffle=True
-)```
+)
+```
 
 # CNN模型框架
 
@@ -378,12 +380,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <span class="pl-s1">dataset</span><span class="pl-c1">=</span><span class="pl-s1">test_datasets</span>,
     <span class="pl-s1">batch_size</span><span class="pl-c1">=</span><span class="pl-c1">64</span>,
     <span class="pl-s1">shuffle</span><span class="pl-c1">=</span><span class="pl-c1">True</span>
-)<span class="pl-s">``</span>`
-
-<span class="pl-c"># CNN模型框架</span>
-
-<span class="pl-s">``</span>`<span class="pl-s1">python</span>
-<span class="pl-k">class</span> <span class="pl-c1">CNN</span>(<span class="pl-s1">nn</span>.<span class="pl-c1">Module</span>):
+)</pre></div>
+<h1>CNN模型框架</h1>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">class</span> <span class="pl-c1">CNN</span>(<span class="pl-s1">nn</span>.<span class="pl-c1">Module</span>):
     <span class="pl-k">def</span> <span class="pl-en">__init__</span>(<span class="pl-s1">self</span>,<span class="pl-s1">num_classes</span>):
         <span class="pl-en">super</span>(<span class="pl-c1">CNN</span>,<span class="pl-s1">self</span>).<span class="pl-c1">__init__</span>()
         <span class="pl-s1">self</span>.<span class="pl-c1">conv1</span> <span class="pl-c1">=</span> <span class="pl-s1">nn</span>.<span class="pl-c1">Sequential</span>(         <span class="pl-c">#input: 1*28*28</span>
