@@ -106,10 +106,12 @@ Max_pool2d(kernel_size = 2) 尺寸减半  128*14*14 -> 128*7*7
 model = CNN(num_classes).to(device)
 Loss = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-`
+```
+
 
 # 训练循环
-`for epoch in range(num_epoch):                                  #训练几轮，epoch=3就是训练全部的数据集3次
+```python
+for epoch in range(num_epoch):                                  #训练几轮，epoch=3就是训练全部的数据集3次
     print('开始训练')
     model.train()                                               #训练模式
     train_loss = 0                                              #初始化损失
@@ -234,10 +236,12 @@ Max_pool2d(kernel_size = 2) 尺寸减半  128*14*14 -> 128*7*7
 model = CNN(num_classes).to(device)
 Loss = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-`
+```
+
 
 # 训练循环
-`for epoch in range(num_epoch):                                  #训练几轮，epoch=3就是训练全部的数据集3次
+```python
+for epoch in range(num_epoch):                                  #训练几轮，epoch=3就是训练全部的数据集3次
     print('开始训练')
     model.train()                                               #训练模式
     train_loss = 0                                              #初始化损失
@@ -423,11 +427,9 @@ Max_pool2d(kernel_size = 2) 尺寸减半  128<em>14</em>14 -&gt; 128<em>7</em>7<
 <h1>模型实例化，损失和优化器</h1>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">model</span> <span class="pl-c1">=</span> <span class="pl-en">CNN</span>(<span class="pl-s1">num_classes</span>).<span class="pl-c1">to</span>(<span class="pl-s1">device</span>)
 <span class="pl-v">Loss</span> <span class="pl-c1">=</span> <span class="pl-s1">nn</span>.<span class="pl-c1">CrossEntropyLoss</span>()
-<span class="pl-s1">optimizer</span> <span class="pl-c1">=</span> <span class="pl-s1">optim</span>.<span class="pl-c1">Adam</span>(<span class="pl-s1">model</span>.<span class="pl-c1">parameters</span>(), <span class="pl-s1">lr</span><span class="pl-c1">=</span><span class="pl-c1">0.001</span>)
-<span class="pl-s">`</span>
-<span class="pl-s"></span>
-<span class="pl-s"><span class="pl-c"># 训练循环</span></span>
-<span class="pl-s">`</span><span class="pl-k">for</span> <span class="pl-s1">epoch</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-s1">num_epoch</span>):                                  <span class="pl-c">#训练几轮，epoch=3就是训练全部的数据集3次</span>
+<span class="pl-s1">optimizer</span> <span class="pl-c1">=</span> <span class="pl-s1">optim</span>.<span class="pl-c1">Adam</span>(<span class="pl-s1">model</span>.<span class="pl-c1">parameters</span>(), <span class="pl-s1">lr</span><span class="pl-c1">=</span><span class="pl-c1">0.001</span>)</pre></div>
+<h1>训练循环</h1>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">for</span> <span class="pl-s1">epoch</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-s1">num_epoch</span>):                                  <span class="pl-c">#训练几轮，epoch=3就是训练全部的数据集3次</span>
     <span class="pl-en">print</span>(<span class="pl-s">"开始训练"</span>)
     <span class="pl-s1">model</span>.<span class="pl-c1">train</span>()                                               <span class="pl-c">#训练模式</span>
     <span class="pl-s1">train_loss</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span>                                              <span class="pl-c">#初始化损失</span>

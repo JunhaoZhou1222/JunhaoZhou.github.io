@@ -94,10 +94,12 @@ Max_pool2d(kernel_size = 2) 尺寸减半  128*14*14 -> 128*7*7
 model = CNN(num_classes).to(device)
 Loss = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-`
+```
+
 
 # 训练循环
-`for epoch in range(num_epoch):                                  #训练几轮，epoch=3就是训练全部的数据集3次
+```python
+for epoch in range(num_epoch):                                  #训练几轮，epoch=3就是训练全部的数据集3次
     print("开始训练")
     model.train()                                               #训练模式
     train_loss = 0                                              #初始化损失
