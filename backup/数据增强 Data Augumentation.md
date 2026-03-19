@@ -1,6 +1,6 @@
 数据增强是对数据进行不同的变化去生成同一张图片但是不同版本的样本
 
-'''python
+```python
 import torchvision.transforms as transform
 
 
@@ -25,4 +25,4 @@ data_transform = {
         transform.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ])
 }
-'''
+```
